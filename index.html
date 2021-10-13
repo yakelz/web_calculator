@@ -4,36 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="wrapper">
-        <div class="calc__display">
-            <input type="text" placeholder="0" class="result" readonly>
-        </div>
+    <div class="calculator">
+        <div class="calc__display">0</div>
         <div class="calc__buttons">
-            <button class="btn">AC</button>
-            <button class="btn">+/-</button>
-            <button class="btn">%</button>
-            <button class="btn btn_color" >/</button>
-            <button class="btn">7</button>
-            <button class="btn">8</button>
-            <button class="btn">9</button>
-            <button class="btn btn_color">*</button>
-            <button class="btn">4</button>
-            <button class="btn">5</button>
-            <button class="btn">6</button>
-            <button class="btn btn_color">-</button>
-            <button class="btn">1</button>
-            <button class="btn">2</button>
-            <button class="btn">3</button>
-            <button class="btn btn_color">+</button>
-            <button class="btn btn_big">0</button>
-            <button class="btn">,</button>
-            <button class="btn btn_color">=</button>
+            <button class="btn"             data-type="clear"       data-key="clear">AC</button>
+            <button class="btn"             data-type="signChange"    data-key="signChange">+/-</button>
+            <button disabled class="btn"             data-type="operator"    data-key="percent">%</button>
+            <button class="btn btn_color"   data-type="operator"    data-key="divide">/</button>
+            <button class="btn"             data-type="number"      data-key="7">7</button>
+            <button class="btn"             data-type="number"      data-key="8">8</button>
+            <button class="btn"             data-type="number"      data-key="9">9</button>
+            <button class="btn btn_color"   data-type="operator"    data-key="times">*</button>
+            <button class="btn"             data-type="number"      data-key="4">4</button>
+            <button class="btn"             data-type="number"      data-key="5">5</button>
+            <button class="btn"             data-type="number"      data-key="6">6</button>
+            <button class="btn btn_color"   data-type="operator"    data-key="minus">-</button>
+            <button class="btn"             data-type="number"      data-key="1">1</button>
+            <button class="btn"             data-type="number"      data-key="2">2</button>
+            <button class="btn"             data-type="number"      data-key="3">3</button>
+            <button class="btn btn_color"   data-type="operator"    data-key="plus">+</button>
+            <button class="btn btn_big"     data-type="number"      data-key="0">0</button>
+            <button disabled class="btn"             data-type="number"      data-key="point">.</button>
+            <button class="btn btn_color"   data-type="equal"       data-key="equal">=</button>
 
         </div>
     </div>
-    <script src="/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

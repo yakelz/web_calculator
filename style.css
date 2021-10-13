@@ -8,7 +8,7 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
-.wrapper {
+.calculator {
     background-color: #dcdcdc;
     border-radius: 13px;
     max-width: 1400px;
@@ -21,22 +21,14 @@ body {
     border-radius: 13px 13px 0px 0px;
     background-color: gray;
     height: 140px;
-    padding: 30px;
+    padding: 20px;
     text-align: right;
+    font: inherit;
+    font-size: 70px;
+    color: white;
+    overflow: hidden;
 }
 
-.result {
-    width: 100%;
-    font: inherit;
-    background: transparent;
-    border: 0;
-    outline: 0;
-    font-size: 70px;
-    text-align: right;
-}
-.result::placeholder {
-    color: whitesmoke;
-}
 .calc__buttons {
 height: 500px;
 display: table;
